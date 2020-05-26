@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_pattern"
+    android:orientation="vertical"
+    tools:context=".AddItemActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/padding_24dp"
+        android:paddingRight="@dimen/padding_24dp"
+
+        android:elevation="@dimen/padding_24dp"
+
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="@string/name"
+            android:autofillHints="@string/name"
+            android:inputType="text"
+            android:maxLines="1"
+            android:imeOptions="actionNext"
+            android:layout_marginRight="@dimen/margin_24dp"
+            android:textColor="@color/text_color"
+            />
+
+        <EditText
+            android:id="@+id/price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="@string/amount"
+            android:textAlignment="textEnd"
+            android:inputType="number"
+            android:maxLines="1"
+            android:imeOptions="actionDone"
+            android:textColor="@color/text_color"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_money_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_8dp"
+            android:layout_marginRight="@dimen/margin_24dp"
+            android:text="@string/money_sign" />
+
+        <Button
+            android:id="@+id/add_btn"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:enabled="false"
+            android:background="@drawable/ic_add"
+            />
+    </LinearLayout>
+
+</LinearLayout>
