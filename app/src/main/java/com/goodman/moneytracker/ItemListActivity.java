@@ -86,7 +86,7 @@ public class ItemListActivity extends AppCompatActivity {
             public void applyData(Record record) {
                 if (record != null) {
                     tvTitle.setText(record.getmTitle());
-                    tvPrice.setText(String.valueOf(record.getmPrice()));
+                    tvPrice.setText(String.format("%1s ₴", String.valueOf(record.getmPrice())));
                 }
             }
         }
